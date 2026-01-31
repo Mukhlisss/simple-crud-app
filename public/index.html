@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple CRUD App</title>
+
+  <title>Task Manager</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center; /* horizontal */
+      align-items: center;     /* vertical */
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    input {
+      padding: 8px;
+    }
+
+    button {
+      padding: 8px 12px;
+      margin-left: 5px;
+    }
+
+    ul {
+      padding: 0;
+      list-style: none;
+      margin-top: 15px;
+    }
+  </style>
+
+  <style>
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8px 0;
+  }
+
+  .actions button {
+    margin-left: 6px;
+  }
+</style>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Task Manager</h1>
+
+    <input id="taskInput" placeholder="New task">
+    <button onclick="addTask()">Add</button>
+
+    <ul id="taskList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
